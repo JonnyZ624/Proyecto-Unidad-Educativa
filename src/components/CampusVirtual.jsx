@@ -4,7 +4,11 @@ import { Button } from 'react-bootstrap'
 function CampusVirtual() {
   return (
     <div>
-      <Button title='Biblioteca Virtual'></Button>
+      <Button className='btn-campus'>Biblioteca Virtual</Button>
+      <Button className='btn-campus'>Aula Virtual</Button>
+      <Button className='btn-campus'>Soporte y Ayuda</Button>
+      <Button className='btn-campus'>Recod Académico</Button>
+      <Button className='btn-campus'>Perfiles</Button>
     </div>
   )
 }
