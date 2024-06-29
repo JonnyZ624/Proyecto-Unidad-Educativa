@@ -1,12 +1,7 @@
-import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
 export default function BibliotecaVirtual() {
   return (
-    <View>
-      <Text>BibliotecaVirtual</Text>
-    </View>
+    <div>BibliotecaVirtual</div>
   )
 }
-
-const styles = StyleSheet.create({})

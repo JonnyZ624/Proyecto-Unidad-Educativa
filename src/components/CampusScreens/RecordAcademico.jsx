@@ -1,12 +1,7 @@
-import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
 export default function RecordAcademico() {
   return (
-    <View>
-      <Text>RecordAcademico</Text>
-    </View>
+    <div>RecordAcademico</div>
   )
 }
-
-const styles = StyleSheet.create({})
