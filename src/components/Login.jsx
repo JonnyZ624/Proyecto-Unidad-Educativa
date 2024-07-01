@@ -23,17 +23,17 @@ export default function Login() {
 
 
   return (
-    <div>
-      <h1>LOGIN</h1>
-      <label>Correo</label>
-      <input type='text' placeholder='Correo'
-      onChange={(text)=> setemail()}
+    <div className='login-container'>
+      <h1 className='login-title'>LOGIN</h1>
+      <label className='login-label'>Correo</label>
+      <input type='text' placeholder='Correo' className='login-input'
+        onChange={(text) => setemail()}
       ></input><br />
-      <label>Contraseña</label>
-      <input type="password" placeholder='Password'
-       onChange={(text)=> setpassword()}
+      <label className='login-label'>Contraseña</label>
+      <input type="password" placeholder='Password' className='login-input'
+        onChange={(text) => setpassword()}
       /><br />
-      <Button title='Login' onClick={() => Inicio}>Inicio</Button>
+      <Button className='login-button' title='Login' onClick={() => Inicio}>Inicio</Button>
     </div>
   )
 }
