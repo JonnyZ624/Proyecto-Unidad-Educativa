@@ -12,6 +12,7 @@ import Soporte from './components/CampusScreens/Soporte';
 import RecordAcademico from './components/CampusScreens/RecordAcademico';
 import Perfiles from './components/CampusScreens/Perfiles';
 
+
 function App() {
   return (
     <BrowserRouter>
