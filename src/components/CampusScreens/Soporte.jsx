@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import { Form, Button, Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import { collection, addDoc } from 'firebase/firestore';
-import { db } from '../../config/Config';
 import '../style/CampusVirtual.css';
 
 export default function Soporte() {
