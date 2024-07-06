@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
+import Button from 'react-bootstrap/Button';
 import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword } from 'firebase/auth';
 import { ref, set } from 'firebase/database';
 import { auth, db } from '../config/Config';
 import './style/estilos.css';
 import { Link } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
+
 
 const AuthPage = () => {
   const [isLogin, setIsLogin] = useState(true);
@@ -14,6 +17,8 @@ const AuthPage = () => {
   const [emailConfirm, setEmailConfirm] = useState("");
   const [passwordConfirm, setPasswordConfirm] = useState("");
   const [error, setError] = useState(null);
+  /*const history = useHistory();
+  history.push('/campusVirtual');*/
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -21,9 +26,12 @@ const AuthPage = () => {
     try {
       const userCredential = await signInWithEmailAndPassword(auth, email, password);
       console.log('Login successful:', userCredential);
+      window.location.href = '/campusVirtual';
+        
     } catch (error) {
       setError(error.message);
     }
+    
   };
 
   const handleRegister = async (e) => {
@@ -61,6 +69,8 @@ const AuthPage = () => {
     setPasswordConfirm("");
   };
 
+  
+
   return (
     <div className="container white z-depth-2">
       <ul className="tabs teal">
@@ -88,7 +98,7 @@ const AuthPage = () => {
               </div>
             </div>
             <center>
-              <button className="btn waves-effect waves-light teal" type="submit">Connect</button>
+              <Button className="btn waves-effect waves-light teal" type="submit"  >Connect</Button>
               <br /><br />
             </center>
           </div>
