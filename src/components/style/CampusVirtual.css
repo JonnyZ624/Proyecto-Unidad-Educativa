@@ -56,3 +56,25 @@
   color: black; 
   border-color: cadetblue;
 }
+
+.soporte-virtual-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.soporte-virtual-form-wrapper {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(8, 8, 8, 0.801);
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+.formulario-recuadro {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  margin-bottom: 20px;
+}
