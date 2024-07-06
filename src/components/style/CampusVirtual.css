@@ -121,3 +121,14 @@
   background-color: #fff;
   margin-bottom: 20px;
 }
+.boton-sesion {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.logout-button {
+  background-color: #ff0000;
+  border: none;
+  color: white;
+}

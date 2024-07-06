@@ -25,6 +25,7 @@ const AuthPage = () => {
     try {
       const userCredential = await signInWithEmailAndPassword(auth, email, password);
       console.log('Login successful:', userCredential);
+      window.location.href = '/campusVirtual';
     } catch (error) {
       setError(error.message);
     }
@@ -95,7 +96,7 @@ const AuthPage = () => {
             </div>
           </div>
           <center>
-            <button className="btn btn-connect" type="submit">Connect</button>
+            <button className="btn-connect" type="submit">Connect</button>
             <br /><br />
           </center>
         </div>
@@ -140,7 +141,7 @@ const AuthPage = () => {
             </div>
           </div>
           <center>
-            <button className="btn btn-submit" type="submit">Submit</button>
+            <button className="btn-submit" type="submit">Submit</button>
           </center>
         </div>
       </form>

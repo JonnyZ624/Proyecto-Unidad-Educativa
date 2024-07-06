@@ -31,7 +31,7 @@
 }
 
 .tab a.active {
-  background-color: #00796b;
+  background-color: darkgray;
   border-radius: 8px 8px 0 0;
 }
 
@@ -56,16 +56,16 @@
 }
 
 input.validate {
-  border-color: #26a69a;
+  border-color: darkgray;
 }
 
 input.validate:focus {
-  border-color: #26a69a;
+  border-color: darkgray;
   box-shadow: none;
 }
 
 .btn {
-  background-color: #009688;
+  background-color: darkgray;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -84,7 +84,7 @@ input.validate:focus {
 }
 .btn-connect,
 .btn-submit {
-  background-color: #00796b;
+  background-color: darkgray;
   color: white;
   padding: 12px 25px;
   border: none;
@@ -98,5 +98,5 @@ input.validate:focus {
 
 .btn-connect:hover,
 .btn-submit:hover {
-  background-color: #004d40;
+  background-color: darkgray;
 }
