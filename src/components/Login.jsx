@@ -5,7 +5,6 @@ import { ref, set } from 'firebase/database';
 import { auth, db } from '../config/Config';
 import './style/estilos.css';
 import { Link } from 'react-router-dom';
-import { useHistory } from 'react-router-dom';
 
 
 const AuthPage = () => {
