@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button';
 import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword } from 'firebase/auth';
 import { ref, set } from 'firebase/database';
 import { auth, db } from '../config/Config';
-import './style/estilos.css';
+import './style/login.css';
 import { Link } from 'react-router-dom';
 
 
@@ -84,18 +84,18 @@ const AuthPage = () => {
             <h3 className="teal-text">Hello</h3>
             <div className="row">
               <div className="input-field col s12">
-                <input id="login-email" type="email" className="validate" value={email} onChange={(e) => setEmail(e.target.value)} required />
                 <label htmlFor="login-email">Email</label>
+                <input id="login-email" type="email" className="validate" value={email} onChange={(e) => setEmail(e.target.value)} required />
               </div>
             </div>
             <div className="row">
               <div className="input-field col s12">
-                <input id="login-password" type="password" className="validate" value={password} onChange={(e) => setPassword(e.target.value)} required />
                 <label htmlFor="login-password">Password</label>
+                <input id="login-password" type="password" className="validate" value={password} onChange={(e) => setPassword(e.target.value)} required />
               </div>
             </div>
             <center>
-              <Button className="btn waves-effect waves-light teal" type="submit"  >Connect</Button>
+              <button className="btn" type="submit">Connect</button>
               <br /><br />
             </center>
           </div>
@@ -107,41 +107,41 @@ const AuthPage = () => {
             <h3 className="teal-text">Welcome</h3>
             <div className="row">
               <div className="input-field col s6">
-                <input id="first_name" type="text" className="validate" value={firstName} onChange={(e) => setFirstName(e.target.value)} required />
                 <label htmlFor="first_name">First Name</label>
+                <input id="first_name" type="text" className="validate" value={firstName} onChange={(e) => setFirstName(e.target.value)} required />
               </div>
               <div className="input-field col s6">
-                <input id="last_name" type="text" className="validate" value={lastName} onChange={(e) => setLastName(e.target.value)} required />
                 <label htmlFor="last_name">Last Name</label>
+                <input id="last_name" type="text" className="validate" value={lastName} onChange={(e) => setLastName(e.target.value)} required />
               </div>
             </div>
             <div className="row">
               <div className="input-field col s12">
-                <input id="register-email" type="email" className="validate" value={email} onChange={(e) => setEmail(e.target.value)} required />
                 <label htmlFor="register-email">Email</label>
+                <input id="register-email" type="email" className="validate" value={email} onChange={(e) => setEmail(e.target.value)} required />
               </div>
             </div>
             <div className="row">
               <div className="input-field col s12">
-                <input id="email-confirm" type="email" className="validate" value={emailConfirm} onChange={(e) => setEmailConfirm(e.target.value)} required />
                 <label htmlFor="email-confirm">Email Confirmation</label>
+                <input id="email-confirm" type="email" className="validate" value={emailConfirm} onChange={(e) => setEmailConfirm(e.target.value)} required />
               </div>
             </div>
             <div className="row">
               <div className="input-field col s12">
-                <input id="register-password" type="password" className="validate" value={password} onChange={(e) => setPassword(e.target.value)} required />
                 <label htmlFor="register-password">Password</label>
+                <input id="register-password" type="password" className="validate" value={password} onChange={(e) => setPassword(e.target.value)} required />
               </div>
             </div>
             <div className="row">
               <div className="input-field col s12">
-                <input id="password-confirm" type="password" className="validate" value={passwordConfirm} onChange={(e) => setPasswordConfirm(e.target.value)} required />
                 <label htmlFor="password-confirm">Password Confirmation</label>
+                <input id="password-confirm" type="password" className="validate" value={passwordConfirm} onChange={(e) => setPasswordConfirm(e.target.value)} required />
               </div>
             </div>
-              <center>
-                <button className="btn waves-effect waves-light teal" type="submit">Submit</button>
-              </center>
+            <center>
+              <button className="btn" type="submit">Submit</button>
+            </center>
           </div>
         </form>
       </div>
