@@ -21,6 +21,7 @@ const AuthPage = () => {
     try {
       const userCredential = await signInWithEmailAndPassword(auth, email, password);
       console.log('Login successful:', userCredential);
+      window.location.href = '/campusVirtual';
     } catch (error) {
       setError(error.message);
     }

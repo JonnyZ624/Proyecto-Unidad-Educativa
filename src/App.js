@@ -4,7 +4,6 @@ import Login from './components/Login';
 import NavBar from './components/NavBar';
 import Inicio from './components/Inicio';
 import Nosotros from './components/Nosotros';
-import Registro from './components/Registro';
 import CampusVirtual from './components/CampusVirtual';
 import BibliotecaVirtual from './components/CampusScreens/BibliotecaVirtual';
 import AulaVirtual from './components/CampusScreens/AulaVirtual';
@@ -22,7 +21,6 @@ function App() {
         <Route path='/inicio' element={<Inicio />} />
         <Route path='/login' element={<Login />} />
         <Route path='/nosotros' element={<Nosotros />} />
-        <Route path='/registro' element={<Registro />} />
         <Route path='/campusVirtual' element={<CampusVirtual />} />
         <Route path='/biblioteca-virtual' element={<BibliotecaVirtual />} />
         <Route path='/aula-virtual' element={<AulaVirtual />} />
