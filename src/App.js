@@ -11,6 +11,7 @@ import AulaVirtual from './components/CampusScreens/AulaVirtual';
 import Soporte from './components/CampusScreens/Soporte';
 import RecordAcademico from './components/CampusScreens/RecordAcademico';
 import Perfiles from './components/CampusScreens/Perfiles';
+import CarruselBiblioteca from './components/Biblioteca/CarruselBiblioteca';
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
         <Route path='/soporte-ayuda' element={<Soporte />} />
         <Route path='/record-academico' element={<RecordAcademico />} />
         <Route path='/perfiles' element={<Perfiles />} />
+        <Route path='/carruselB' element={<CarruselBiblioteca/>}/>
       </Routes>
     </BrowserRouter>
   );
