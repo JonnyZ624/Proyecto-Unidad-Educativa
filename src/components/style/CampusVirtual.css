@@ -132,3 +132,8 @@
   border: none;
   color: white;
 }
+.gif-container{
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+}
