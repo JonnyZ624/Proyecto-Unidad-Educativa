@@ -20,8 +20,8 @@ function NavBar() {
             navbarScroll
           >
             <Nav.Link href="/inicio">Inicio</Nav.Link>
-            <Nav.Link href="/login">Login</Nav.Link>
             <Nav.Link href="/nosotros">Nosotros</Nav.Link>
+            <Nav.Link href="/login">Login</Nav.Link>
           </Nav>
           <Form className="d-flex">
             <Form.Control
