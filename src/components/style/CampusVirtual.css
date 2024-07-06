@@ -57,6 +57,49 @@
   border-color: cadetblue;
 }
 
+/* BIBLIOTECA VIRTUAL*/
+.campus-virtual-container2 {
+  text-align: center; 
+}
+
+.search-form2 {
+  margin-top: 40px; /* Espacio superior para separar del título */
+  margin-bottom: 40px;
+  display: inline-block; /* Para que ocupe solo el ancho necesario */
+}
+
+/* CarruselBiblioteca.css */
+.carousel {
+  max-width: 800px; /* Ancho máximo del carrusel */
+  margin: 0 auto; /* Centrar el carrusel */
+}
+
+.carousel-item {
+  text-align: center; /* Centrar el contenido dentro de cada slide */
+}
+
+.texto{
+  color: #008B8B;
+}
+
+.text-center {
+  text-align: center;
+  margin-top: 20px; /* Puedes ajustar el margen según sea necesario */
+  
+  color: black;
+  border-color: black;
+}
+.btn-biblioteca{
+  
+  background-color: darkgray;
+  color: black;
+  border-color: black;
+}
+.btn-biblioteca:hover{
+  background-color: cadetblue; 
+  color: black; 
+  border-color: cadetblue;
+}
 .soporte-virtual-container {
   text-align: center;
   padding: 20px;
